@@ -82,7 +82,7 @@ def nonce_find():
         print(f'You have not requested a reward yet. Do it with "reward"')
     else:
         print(f'Time to find the nonce value. The block\'s hash has to start with {ZEROS_REQUIRED} zeros')
-        print(f'Keep pressing ENTER to test values, type "exit" to exit', end='')
+        print(f'Keep pressing ENTER to test values, type "exit" to exit')
         try:
             while True:
                 _inp = input()

@@ -83,7 +83,8 @@ class TxOutput(TxIO):
         script_str = ' '.join((str(opc) for opc in self.script))
         script_hex = ''.join((opc.to_hex() for opc in self.script))
         spent_str = '(U)' if not self.spent else '[S]'
-        return f'{self.tx_id} #{self.index} -> <u>{self.amount}</u> SAT <b>{spent_str}</b> | ScriptPubKey = {script_hex} [<u>{script_str}</u>]'
+        tx_id_short = self.tx_id[:4] + '...'
+        return f'{tx_id_short} #{self.index} -> <u>{self.amount}</u> SAT <b>{spent_str}</b> | ScriptPubKey = {script_hex} [<u>{script_str}</u>]'
 
 
 class Transaction:

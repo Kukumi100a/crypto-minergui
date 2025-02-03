@@ -6,6 +6,6 @@ MESSAGES = {
     'invalid_input': 'This transaction uses non-existent funds',
     'already_spent': 'This transaction uses funds which had already been spent',
 }
-PROMPT = '    CryptoMiner~ > '
+PROMPT = '~ CryptoMiner ~'
 ZEROS_REQUIRED = 2
 SCRIPT_LENGTH = 3  # Relative script length. 2 will be extremely short, 10 will be extremely long.
